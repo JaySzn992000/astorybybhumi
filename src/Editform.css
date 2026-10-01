@@ -1,0 +1,135 @@
+
+.password-container {
+position: relative;
+}
+
+.password-input-wrapper {
+position: relative;
+display: flex;
+align-items: center;
+}
+
+.password-toggle {
+position: absolute;
+right: 22px;
+top: 9px;
+cursor: pointer;
+color: #666;
+}
+
+.password-toggle:hover {
+color: #333;
+}
+
+.flex_containerForm {
+display: flex;
+align-items: center;
+width: 15vw;
+flex-direction: column;
+justify-content: center;
+text-align: start;
+line-height: 1.5em;
+margin: auto;
+padding-bottom: 37px;
+}
+
+.flex_containerForm .EditFontSize{
+font-size: .8rem;
+}
+
+.Frm_edit input {
+border: none;
+border: 0.2px solid #d1cacc;
+border-radius: 27px;
+outline: none;
+padding: 9px 13px 11px 11px;
+}
+
+.Frm_edit h4 {
+font-size: 0.9rem;
+margin: 1em 0em 1em 0em;
+}
+
+.Frm_edit {
+margin-top: 1.5em;
+}
+
+.Frm_edit button {
+border: none;
+width: 95%;
+background-color: #231f20;
+border-radius: 27px;
+padding: 13px;
+margin-top: 2.5em;
+cursor: pointer;
+color: rgba(255, 255, 255, 0.97);
+}
+
+.Header_position {
+margin-top: 9.7em;
+}
+
+
+
+@media (max-width: 768px) {
+
+.flex_containerForm {
+display: block;
+width: 65%;
+text-align: center;
+margin-top: 2.7em;
+}
+
+.hOp_edit {
+width: 94px;
+height: 94px;
+}
+
+.password-toggle {
+position: relative;
+right: 27px;
+top: 2px;
+cursor: pointer;
+color: #666;
+}
+
+.password-input-wrapper {
+justify-content: center;
+}
+
+.Frm_edit button {
+width: 213px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1516px) {
+
+.flex_containerForm {
+display: block;
+width: 100%;
+text-align: center;
+margin-top: 2.7em;
+}
+
+.Frm_edit button {
+width: 213px;
+}
+
+.password-toggle {
+position: relative;
+right: 27px;
+top: 2px;
+}
+
+.hOp_edit {
+width: 104px;
+height: 104px;
+}
+
+.password-input-wrapper {
+justify-content: center;
+}
+
+}

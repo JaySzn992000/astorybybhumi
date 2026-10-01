@@ -1,0 +1,193 @@
+
+#logged_form {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 100%;
+margin-top: 2.7em;
+margin-bottom: 3.7em;
+line-height: 2.8em;
+text-align: start;
+}
+
+#logged_form #logged_Container {
+width: 20vw;
+}
+
+#logged_form img {
+width: 27vw;
+}
+
+#logged_form h2 {
+margin-bottom: 0.2em;
+font-size: 1.2rem;
+color: #000;
+text-align: center;
+}
+
+#logged_form h4 {
+color: #000000;
+font-size: .9rem;
+}
+
+#logged_form #fg_pass {
+margin-top: 1.4em;
+color: #ff0000;
+cursor: pointer;
+}
+
+#logged_form input {
+width: 297px;
+padding: 11px !important;
+padding-left: 21px !important;
+outline: none;
+border-radius: 27px;
+border: 0.5px solid #DCDCDC;
+}
+
+.password-wrapper input {
+width: 277px;
+box-sizing: border-box;
+}
+
+.eye-icon {
+position: absolute;
+right: 25px !important;
+top: 58% !important;
+transform: translateY(-50%);
+cursor: pointer;
+color: #555;
+font-size: 18px;
+}
+
+#logged_form button {
+width: 100%;
+padding: 12px;
+margin-top: 1.3em;
+border: none;
+line-height: 1.7em;
+color: #FFFFFF;
+background-color: #000;
+border-radius: 27px;
+cursor: pointer;
+font-size: 0.8rem;
+}
+
+.message_forget  p {
+margin-top: 1.7em;
+margin-left: 2.9em;
+}
+
+.password-wrapper {
+position: relative;
+width: 100%;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+#logged_form {
+flex-direction: column;
+width: 80vw;
+line-height: 2.6em;
+margin-top: 2.7em;
+margin-bottom: 5em;
+}
+
+#logged_form #logged_Container {
+width: 100%;
+}
+
+#logged_form img {
+width: 90vw;
+display: block;
+}
+
+#logged_form h2 {
+font-size: 1.1rem;
+text-align: left;
+}
+
+#logged_form input {
+width: 100%;
+}
+
+.password-wrapper input {
+width: 100%;
+}
+
+#logged_form #fg_pass {
+margin-top: 1em;
+}
+
+#logged_form button {
+margin-top: 0.8em;
+}
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+#logged_form {
+width: 90%;
+margin: auto;
+margin-top: 3.5em;
+margin-bottom: 5em;
+line-height: 2.7em;
+}
+
+#logged_form #logged_Container {
+width: 38vw;
+}
+
+#logged_form img {
+width: 40vw;
+}
+
+#logged_form input {
+width: 100%;
+}
+
+.password-wrapper input {
+width: 100%;
+}
+
+#logged_form button {
+font-size: 0.85rem;
+}
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+
+#logged_form {
+width: 95%;
+margin: auto;
+margin-top: 3em;
+margin-bottom: 4em;
+line-height: 2.8em;
+}
+
+#logged_form #logged_Container {
+width: 24vw;
+}
+
+#logged_form img {
+width: 32vw;
+}
+
+#logged_form h2 {
+font-size: 1.25rem;
+}
+
+#logged_form h4 {
+font-size: 0.95rem;
+}
+
+}

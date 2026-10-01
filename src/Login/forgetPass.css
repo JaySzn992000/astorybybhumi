@@ -1,0 +1,116 @@
+
+.message_forget p {
+color: #FF0000;
+max-width: 420px;
+margin: 2.1em auto 0;
+line-height: 2.3em;
+font-size: 0.9rem;
+text-align: center;
+}
+
+#logged_form_Flex {
+margin: 4.5em auto 2.3em;
+max-width: 300px;
+}
+
+#logged_form_Flex input {
+width: 100%;
+padding: 11px 21px;
+border-radius: 27px;
+outline: none;
+border: 0.5px solid #DCDCDC;
+box-sizing: border-box;
+}
+
+.forget_flex {
+max-width: 420px;
+margin: auto;
+text-align: start;
+line-height: 2.1em;
+}
+
+#logged_form_Flex button {
+background-color: #000;
+margin-top: 2.7em;
+width: 100%;
+padding: 15px;
+border-radius: 27px;
+border: none;
+color: #fff;
+cursor: pointer;
+}
+
+#logged_form_Flex h2 {
+font-size: 1.1rem;
+text-align: center;
+margin-bottom: 0.7em;
+}
+
+#logged_form_Flex h4 {
+font-size: 1rem;
+color: #231F20;
+margin-bottom: 0.7em;
+}
+
+#very_btn {
+margin-bottom: 1.7em;
+}
+
+
+
+@media (max-width: 768px) {
+
+.message_forget p {
+width: 100%;
+font-size: 0.85rem;
+line-height: 2.1em;
+padding: 0 1rem;
+}
+
+#logged_form_Flex {
+width: 100%;
+padding: 0 1rem;
+}
+
+.forget_flex {
+width: 100%;
+padding: 0 1rem;
+text-align: start;
+}
+
+#logged_form_Flex input {
+padding: 10px 16px;
+}
+
+#logged_form_Flex button {
+width: 100%;
+margin-top: 2em;
+}
+
+#logged_form_Flex h2 {
+font-size: 1rem;
+}
+
+#logged_form_Flex h4 {
+font-size: 0.9rem;
+}
+
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+
+#logged_form_Flex {
+max-width: 350px;
+}
+
+#logged_form_Flex button {
+width: 50%;
+}
+
+.forget_flex {
+text-align: start;
+}
+
+}

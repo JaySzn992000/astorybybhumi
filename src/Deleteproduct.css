@@ -1,0 +1,93 @@
+
+.Delete-relative {
+width: 95%;
+margin: 40px auto;
+max-width: 850px;
+}
+
+.Delete_form {
+background: #ffffff;
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+border: 1px solid #e5e7eb;
+text-align: left;
+margin-top: 2.7em;
+transition: all 0.3s ease;
+}
+
+.Delete_form h3 {
+font-size: 1.25rem;
+font-weight: 600;
+color: #111827;
+margin-bottom: 24px;
+border-bottom: 2px solid #f3f4f6;
+padding-bottom: 12px;
+}
+
+.Delete_form label {
+font-size: 0.8rem;
+font-weight: 600;
+color: #6b7280;
+text-transform: uppercase;
+display: block;
+margin-bottom: 8px;
+}
+
+.Delete_form input {
+width: 100%;
+padding: 12px 16px;
+border: 1px solid #d1d5db;
+border-radius: 8px;
+font-size: 0.95rem;
+color: #111827;
+transition: all 0.2s;
+margin-bottom: 20px;
+}
+
+.Delete_form input:focus {
+border-color: #2563eb;
+outline: none;
+box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.Delete_form button {
+background-color: #ef4444; 
+color: #ffffff;
+padding: 12px 24px;
+border: none;
+border-radius: 8px;
+font-weight: 600;
+cursor: pointer;
+transition: background 0.2s;
+width: auto;
+}
+
+.Delete_form button:hover {
+background-color: #dc2626;
+}
+
+
+.Delete_formConinside {
+margin-left: 0;
+}
+
+@media (max-width: 768px) {
+.Delete_form {
+margin-left: 0;
+width: 100%;
+}
+.Delete_form button {
+width: 100%;
+}
+}
+
+@media (min-width: 769px) {
+
+.Delete_form {
+margin-left: 17vw;
+}
+.Delete_form.Delete_formConinside {
+margin-left: 0;
+}
+}

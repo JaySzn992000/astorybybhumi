@@ -1,0 +1,161 @@
+
+.admin-profile-container {
+display: flex;
+width: 100%;
+padding-top: 50px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover; 
+min-height: 35vh;
+}
+
+.admin-avatar {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 100%;
+}
+
+.admin-avatar h2 {
+color: #000000;
+margin-bottom: 0.5em;
+margin-top: 0.5em;
+font-weight: normal;
+text-align: center;
+}
+
+.circle-avatar {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto 1.2em auto;
+background-color: #f08080;
+}
+
+.circle-avatar h1 {
+color: #FFFFFF;
+font-size: 2.5rem;
+margin: 0;
+padding: 0;
+}
+
+.admin-info-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+width: 100%;
+max-width: 400px;
+margin: 0 auto;
+}
+
+.admin-info-box h2 {
+margin: 0.3em 0;
+font-weight: normal;
+color: #333;
+width: 100%;
+text-align: center;
+line-height: 1.9em;
+font-size: 1.2rem;
+word-break: break-all;
+}
+
+.flx_adminPr {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.8em;
+margin: 0.8em 0;
+cursor: pointer;
+width: 100%;
+}
+
+.flx_adminPr li {
+color: #333;
+cursor: pointer;
+list-style: none;
+font-size: 1rem;
+}
+
+.flx_adminPr svg {
+font-size: 1.2rem;
+color: rgb(193, 188, 188);
+cursor: pointer;
+transition: color 0.3s ease;
+}
+
+.password-section {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.8em;
+font-size: 1.1rem;
+margin: 1em auto;
+padding: 10px 20px;
+background-color: #f5f5f5;
+border-radius: 50px;
+width: fit-content;
+}
+
+.password-section p {
+font-size: 1rem;
+margin: 0;
+letter-spacing: 2px;
+}
+
+.password-section span {
+cursor: pointer;
+color: #888;
+display: flex;
+align-items: center;
+margin-top: 0;
+}
+
+.password-section span svg {
+font-size: 1.1rem;
+}
+
+.password-section span:hover {
+color: #f08080;
+}
+
+
+@media (max-width: 768px) {
+
+.admin-profile-container {
+padding-top: 30px;
+min-height: 35vh;
+}
+
+.circle-avatar {
+width: 80px;
+height: 80px;
+}
+
+.circle-avatar h1 {
+font-size: 2rem;
+}
+
+.password-section {
+padding: 8px 16px;
+}
+
+.password-section p {
+font-size: 0.9rem;
+}
+
+.flx_adminPr li {
+font-size: 0.9rem;
+}
+
+}
