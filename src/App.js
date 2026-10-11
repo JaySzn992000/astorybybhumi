@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
-import "./App.css";
-import img1 from "./Images/1.jpeg";
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import video2_1 from "./Images/2.1video.mp4";
+import img1 from "./Images/1.jpeg";
 import img2 from "./Images/2.jpeg";
 import img3 from "./Images/3.jpeg";
 import img4 from "./Images/4.jpeg";
@@ -15,27 +14,41 @@ import img11 from "./Images/11.jpeg";
 import img12 from "./Images/12.jpg";
 import img13 from "./Images/13.jpeg";
 import img14 from "./Images/14.jpeg";
-import img15 from "./Images/15.jpeg";
+// import img15 from "./Images/15.jpeg";
 import img16 from "./Images/16.jpeg";
-import img17 from "./Images/17.jpeg";
-import img18 from "./Images/18.jpeg";
-import img19 from "./Images/19.jpeg";
-import img20 from "./Images/20.jpeg";
+// import img17 from "./Images/17.jpeg";
+// import img18 from "./Images/18.jpeg";
+// import img19 from "./Images/19.jpeg";
+// import img20 from "./Images/20.jpeg";
 import img21 from "./Images/21.jpg";
 import img22 from "./Images/22.jpg";
 import img23 from "./Images/23.jpg";
-import img24 from "./Images/24.jpg";
-import img25 from "./Images/25.jpg";
+// import img24 from "./Images/24.jpg";
+// import img25 from "./Images/25.jpg";
 import img26 from "./Images/26.jpg";
 import img27 from "./Images/27.jpg";
-import img28 from "./Images/28.jpg";
+// import img28 from "./Images/28.jpg";
 import img29 from "./Images/29.jpg";
 import img30 from "./Images/30.jpg";
 import img31 from "./Images/31.jpg";
-import img32 from "./Images/32.jpg";
+// import img32 from "./Images/32.jpg";
 import img33 from "./Images/33.jpg";
 import img34 from "./Images/34.jpg";
 import img35 from "./Images/35.jpg";
+// import img36 from "./Images/36.jpg"
+import chat1 from "./Images/chat1.jpeg";
+import chat2 from "./Images/chat2.jpeg";
+import chat3 from "./Images/chat3.jpeg";
+import chat4 from "./Images/chat4.jpeg";
+import chat5 from "./Images/chat5.jpeg";
+import chat6 from "./Images/chat6.jpeg";
+import chat7 from "./Images/chat7.jpeg";
+import chat8 from "./Images/chat8.jpg";
+import chat9 from"./Images/36.jpg";
+import chat10 from"./Images/chat9.jpeg";
+import chat11 from"./Images/chat10.jpeg";
+import SorryScene from "./SorryScene";
+import "./App.css";
 
 const storyData = [
 { id: 1, image: img1, chapter: "Chapter One", title: "Bhumii, A Happy Extrovert Girl...", act: "act1", mood: "happy",
@@ -45,16 +58,16 @@ shayari: `In a little notebook, hidden from sight,\nShe poured out her heart eve
 { id: 3, image: img2, chapter: "Chapter Three", title: "A Quiet Stranger.", act: "act1", mood: "happy",
 shayari: `One ordinary evening, one ordinary office,\nA Quiet stranger's sit's across her desk' front.\nShe asked for a chai, he looked confused, then said yes,\nAnd that's where it all began.\n` },
 { id: 4, image: img3, chapter: "Chapter Four", title: "A Quiet Guy.", act: "act1", mood: "happy",
-shayari: `He spoke in whispers, looked down when he smiled,\nCarried a silence that felt like a child.\nShe was the storm, he was the calm in the sea,\nTwo different worlds — meant to be.` },
-{ id: 5, image: img4, chapter: "Chapter Five", title: "Get's Her Diary Note'book.", act: "act1", mood: "happy",
+shayari: `He spoke in whispers, looked down when he smiled,\nCarried a silence that felt like a child.\nShe was the storm, he was the calm in the sea,\nTwo different worlds — what happens Later Let's see...` },
+{ id: 5, image: img4, chapter: "Chapter Five", title: "Get's Her Shayarie's Diary.", act: "act1", mood: "happy",
 shayari: `One day he asked her for her shayari's. she gave him her little diary." quietly, without a word. "I write what I feel, I can't say it out loud," She gave it to a stranger — her whole world that night.` },
 { id: 6, image: img5, chapter: "Chapter Six", title: "Read's Her Heart Through Shayarie's.", act: "act1", mood: "happy",
 shayari: `Page after page, he felt her pain,\nHer hidden storms, her silent rain.\nHe realised then, in that quiet room That\n Extrovert girl was empty in her heart, Her\n smile was a mask for a quiet gloom.` },
 { id: 7, image: img6, chapter: "Chapter Seven", title: "The Pen He Never Thought He'd Hold.", act: "act2", mood: "calm",
 shayari: `He picked up a pen he never thought he'd hold,\nWrote her a shayari, shy and bold.\nFor the first time in his life, words found his hand,\nA language he never knew he'd understand.` },
 { id: 8, image: img7, chapter: "Chapter Eight", title: "Both Started Writing Shayarie's.", act: "act2", mood: "calm",
-shayari: `Two pens, two hearts, one beautiful rhyme,\nTheir thought's filled the pages, one line at a time.\nThey wrote of stars, of dreams, of fears,\nOf laughter, of loss, of unshed tears of love, of  \n silence, Two souls writing what they never said.` },
-{ id: 9, image: img8, chapter: "Chapter Nine", title: "The Message's Call's That Never Ended All Day & Night", act: "act2", mood: "calm",
+shayari: `Two pens, two hearts, one beautiful rhyme,\nTheir thought's filled the pages, one line at a time.\nThey wrote of stars, of dreams, of fears,\nOf laughter, of loss, of unshed tears of love, of  \n silence, Two souls writing what they never knew.` },
+{ id: 9, image: img8, chapter: "Chapter Nine", title: "The Message's Call's That Never Ended All Day & Night.", act: "act2", mood: "calm",
 shayari: `Messages at midnight, calls at dawn,\nTheir voices tangled like a favourite song.\nThe world slept on, but they stayed awake,\n Not in love, but something deeper Two people \n who became each other's strength,
 Teaching, supporting emotionally, learning about life, \n standing side by side,
 In every up and down, in every tide..` },
@@ -72,19 +85,22 @@ A silence louder than anything heard,
 Pride spoke first, and hurt spoke fast,
 And a beautiful friendship became the past..` },
 { id: 14, image: img13, chapter: "Chapter Fourteen", title: "Everything Went Wrong.", act: "act4", mood: "sad",
-shayari: `The chats went cold, the calls went dead,\nOnly her diary knew what she said.\nEverything they built — shattered, torn,\nLeft her questioning why she even talked.` },
+shayari: `The chats went cold, the calls went dead,\nOnly her diary knew what she said.\nEverything they built — shattered, torn,\nLeft her questioning why they even talked.` },
 { id: 15, image: img14, chapter: "Chapter Fifteen", title: "I Know It Hurt's.", act: "act4", mood: "sad",
 shayari: `I know you're hurting — more than words can hold,\nI know your heart feels heavy, dark and cold.\nI'm not here to justify or defend,\nI'm here because I never wanted this end.` },
 // { id: 16, image: img15, chapter: "Chapter Sixteen", title: "I Am Trying My Best", act: "act4", mood: "sad",
 // shayari: `I'm trying my best — in ways you can't see,\nTo become the person you needed me to be.\nEvery apology I write, every tear I hide,\nCarries the weight of the day you cried.` },
 { id: 17, image: img16, chapter: "Chapter Seventeen", title: "The Emptine's.", act: "act4", mood: "sad",
 shayari: `She smiles at the world, but her eyes don't lie,\nThere's a storm behind every "I'm fine, don't ask why."\n I Know You hate me now but i don't want this end,\n please give me a chance so that every things \n happens again well.` },
-// { id: 18, image: img17, chapter: "Chapter Eighteen", title: "She Can't Handle It", act: "act4", mood: "sad",
+// { id: 18, image: img36, chapter: "Chapter Eighteen", title: "She Can't Handle It", act: "act4", mood: "sad",
 // shayari: `It's too heavy now — the silence, the pain,\nEvery memory falls like unforgiving rain.\nShe closes her diary, holds it to her chest,\nAnd whispers to the dark, "I tried my best."` },
 // { id: 19, image: img18, chapter: "Chapter Nineteen", title: "The Emptiness", act: "act4", mood: "sad",
 // shayari: `The headphones hang silent, the sketch gathers dust,\nThe shayaris sit waiting, covered in rust.\nShe waits for a message that never arrives,\nAnd slowly, quietly, she just survives.` },
 // { id: 20, image: img19, chapter: "Chapter Twenty", title: "One Last Wish", act: "act4", mood: "sad",
 // shayari: `If you ever read this, know that I cared,\nKnow that I'm sorry for the silence we shared.\nNot every ending is a goodbye,\nSometimes it's just a tired heart's sigh.` },
+// { id: 21, image: img36, chapter: "Chapter Twenty-One", title: "I Know This Is Where You Belong.", act: "act5", mood: "hope",
+// shayari: `This isn't the end. This is where your story begins. \n The fight, the silence, the pain — They were chapters, 
+// not the whole book. Now it's your turn. Your dreams. \n Your flight. Your city. Your shelter. Your teddies. Your home. \n No one to wait for. No one to explain to. Just you — And everything you ever imagined."` },
 { id: 21, image: img21, chapter: "Chapter Twenty-One", title: "I Know This Is Where You Belong.", act: "act5", mood: "hope",
 shayari: `This isn't the end. This is where your story begins. \n The fight, the silence, the pain — They were chapters, 
 not the whole book. Now it's your turn. Your dreams. \n Your flight. Your city. Your shelter. Your teddies. Your home. \n No one to wait for. No one to explain to. Just you — And everything you ever imagined."` },
@@ -115,29 +131,47 @@ shayari: `Every morning you'll feed them with your own hands,\n will Give names 
 shayari: `Word spread, people came, help arrived,\nAnd the little shelter she built — thrived.\nShe wasn't just a girl anymore, she was a home,\nFor every soul that had ever felt alone.` },
 { id: 34, image: img34, chapter: "Chapter Thirty-Four", title: "Her Teddy Collection — After All Her Dream's.", act: "act5", mood: "hope",
 shayari: `On her bed sat teddies — soft, old, and new,\nEach one a memory she'd held onto.\nFrom childhood to now, they'd watched her grow,\nAnd they knew every secret she'd never let show.` },
-{ id: 35, image: img35, chapter: "The Final Page", title: "She Achieved Everything She Dreamt Of.", act: "act5", mood: "hope",
-shayari: `She lay on her dari, the diary in her hand,\nLooking back at the girl who once couldn't stand.\nThe flight, the job, the house, the care,\nThe teddies, the shelter — they were all still there.\n\nShe smiled at the ceiling, a tear in her eye,\n"I did everything I ever imagined," she sighed.\nNot for anyone else — but for the girl she used to be,\nWho once thought she'd never be free.` },
+{ id: 35, image: img35, chapter: "The Final Page", title: "She Did It — All Of She Imagined Of.", act: "act5", mood: "hope",
+shayari: `After her all Dream's She lay on her dari, the diary in her hand,\nLooking back at the girl who once couldn't stand.\nThe flight, the job, the house, the care,\nThe teddies, the shelter — they were all still there.\n\nShe smiled at the ceiling, a tear in her eye,\n"I did everything I ever imagined," she sighed.\nNot for anyone else — but for the girl she used to be,\nWho once thought she'd never be free.` },
 ];
 
 const lastChapter = {
 id: 36,
 image: img35,
 chapter: "Epilogue",
-title: "A Letter To The Girl I Was",
-shayari: `Dear girl who cried alone at night,\nWho thought her dreams were out of sight,\nLook at us now — we made it through,\nEvery single thing I promised you.\n\nThe flight, the job, the house, the care,\nThe teddies, the shelter — they're all still there.\nAnd the boy who left, the friend who broke,\nThey were just chapters — not the whole book.\n\nSo here I am, on my dari, at peace,\nWith everything I ever wanted, finally at ease.\nI did it, love. I did it all.\nAnd I'm so proud of you for not letting me fall.`,
-};
+title: "A Million Times Sorry, Bhumi",
+shayari: `I am really, really, really sorry.
+A million times sorry.
 
-const lyrics = [
-{ t: 0, line: "" },
-{ t: 4, line: "I get weak for your smile…" },
-{ t: 9, line: "Every time you look my way," },
-{ t: 14, line: "I forget the words to say…" },
-{ t: 19, line: "I get weak for your smile…" },
-{ t: 25, line: "And I know it's not the same," },
-{ t: 30, line: "But I'd do it all again…" },
-{ t: 36, line: "I get weak for your smile…" },
-{ t: 44, line: "" },
-];
+Once, you cared for me
+more than I deserved.
+Let me care for you once again —
+more and more, for infinite times.
+
+You don't need to love me.
+You don't need to feel anything like that.
+Do what you want. Be blessed a thousand times.
+Find the one you want.
+
+No hope from you anymore.
+Not wanting anything from you.
+
+But please, please, please —
+don't end the things like this.
+The things we built in four months.
+
+It didn't take me three weeks to ignore you.
+It took me three weeks to understand myself,
+to undo the feelings I had for you.
+
+Finally, I am that Jay
+you met four months ago.
+
+Let's be that again —
+that Bhumi or Jay.
+
+Please. Please. Please.`,
+};
 
 function Typewriter({ text, speed = 22, className = "" }) {
 const [shown, setShown] = useState("");
@@ -150,6 +184,7 @@ const obs = new IntersectionObserver(([e]) => e.isIntersecting && setVisible(tru
 obs.observe(el);
 return () => obs.disconnect();
 }, []);
+
 useEffect(() => {
 if (!visible) return;
 setShown("");
@@ -222,43 +257,6 @@ className="frame-video"
 );
 }
 
-function SongPlayer({ active }) {
-const [line, setLine] = useState("");
-const [time, setTime] = useState(0);
-const [expanded, setExpanded] = useState(false);
-useEffect(() => {
-if (!active) return;
-const start = Date.now();
-const t = setInterval(() => {
-const elapsed = Math.floor((Date.now() - start) / 1000);
-setTime(elapsed);
-const found = [...lyrics].reverse().find((l) => l.t <= elapsed);
-setLine(found ? found.line : "");
-}, 500);
-return () => clearInterval(t);
-}, [active]);
-if (!active) return null;
-return (
-<div className={`song-player ${expanded ? "expanded" : ""}`} onClick={() => setExpanded(!expanded)}>
-<div className="song-visualizer">
-{Array.from({ length: 12 }).map((_, i) => (
-<span key={i} className="viz-bar" style={{ animationDelay: `${i * 0.1}s` }} />
-))}
-</div>
-<div className="song-note">♪</div>
-<div className="song-content">
-<div className="song-line">{line || "…"}</div>
-<div className="song-time">
-{String(Math.floor(time / 60)).padStart(2, "0")}:{String(time % 60).padStart(2, "0")}
-</div>
-</div>
-<div className="song-progress">
-<div className="song-progress-fill" style={{ width: `${Math.min((time / 44) * 100, 100)}%` }} />
-</div>
-</div>
-);
-}
-
 function Letter({ onMood }) {
 const [open, setOpen] = useState(false);
 const [typed, setTyped] = useState("");
@@ -294,6 +292,7 @@ height: `${2 + Math.random() * 3}px`,
 }} />
 ))}
 </div>
+
 <div className="letter-glow" />
 <div className="letter-aurora" />
 {!open ? (
@@ -328,110 +327,308 @@ line.trim() === "" ? (
 );
 }
 
-function PromiseScene({ onMood }) {
-const [called, setCalled] = useState(false);
+function ChatMemories() {
 const [visible, setVisible] = useState(false);
 const ref = useRef(null);
+
 useEffect(() => {
 const el = ref.current;
 if (!el) return;
-const obs = new IntersectionObserver(([e]) => {
-if (e.isIntersecting) { setVisible(true); onMood("stand"); }
-}, { threshold: 0.25 });
+const obs = new IntersectionObserver(
+([e]) => e.isIntersecting && setVisible(true),
+{ threshold: 0.15 }
+);
+obs.observe(el);
+return () => obs.disconnect();
+}, []);
+
+const chats = [
+{
+img: chat1,
+topLine: "3 weeks ago, you asked…",
+title: "Kyu kya hua? Bhumi Please once you said me these lines Can we live like this ? ... not love but this... ",
+time: "11:47 pm",
+label: "Chat 1",
+},
+{
+img: chat2,
+topLine: "4 weeks ago, you said…",
+title: "You'r First Trust, Jay Can I Trust You...???",
+time: "9:29 pm",
+label: "Chat 2",
+},
+{
+img: chat3,
+topLine: "4 weeks ago, you said…",
+title: "Once You told I'm Scared of being Alone... I didn't understand it then. Now I do...",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+{
+img: chat4,
+topLine: "4 weeks ago, you said…",
+title: "Bhumii Once you said me... close one ka life sa jana why this so normalised ....??? but why Now for each other ??? ...",
+time: "9:29 pm",
+label: "Chat 2",
+},
+{
+img: chat5,
+topLine: "4 weeks ago, you said…",
+title: "How much We were Deep ... ??? but I know meaning of these line's Bhumii... That's why i am doing these all things...Remember? You' belong to these line's...",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+{
+img: chat6,
+topLine: "4 weeks ago, you said…",
+title: "A Bhumii I Lost... I may not hope to Expect this Again... but the same I did in hesitation with you... not to bother you...",
+time: "9:29 pm",
+label: "Chat 2",
+},
+{
+img: chat7,
+topLine: "4 weeks ago, you said…",
+title: "What boy's does in Love... ??? Efforts, Even I've undone those feelings... But I don't want anything to end like this.",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+{
+img: chat8,
+topLine: "4 weeks ago, you said…",
+title: "Bhumii I'am really really Sorry ...",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+{
+img: chat10,
+topLine: "4 weeks ago, you said…",
+title: "Once you told me... Any Problem U Can share Me...",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+{
+img: chat11,
+topLine: "4 weeks ago, you said…",
+title: "Now I understand what those lines meant... what you could'not handle ...",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+{
+img: chat9,
+topLine: "4 weeks ago, you said…",
+title: "Bhumii... Please listen to that heart you once had for me. I genuinely promise — I won't bother you, I won't hurt you, not playing with you... May Krishna bless us this time. Please —",
+time: "9:29 pm",
+label: "Chat 2",
+}
+];
+
+return (
+
+<section ref={ref} className={`chat-memories ${visible ? "in-view" : ""}`}>
+<div className="chat-memories-glow" />
+
+<div className="chat-memories-inner">
+<p className="chat-memories-label">Once you said me…</p>
+<h2 className="chat-memories-title">Do you Remember... ??? What Us ???</h2>
+
+<div className="chat-list">
+{chats.map((chat, i) => (
+<div
+className="chat-item"
+key={i}
+style={{ animationDelay: `${i * 0.15}s` }}
+>
+
+<div className="chat-notif">
+<div className="chat-notif-avatar">💬</div>
+<div className="chat-notif-content">
+<p className="chat-notif-top">{chat.topLine}</p>
+<p className="chat-notif-msg">{chat.title}</p>
+</div>
+<span className="chat-notif-time">{chat.time}</span>
+<span className="chat-notif-pulse" />
+</div>
+
+<div className="chat-card-frame">
+<img src={chat.img} alt={chat.label} loading="lazy" />
+<div className="chat-card-grain" />
+</div>
+<p className="chat-card-name">{chat.label}</p>
+</div>
+))}
+</div>
+
+<p className="chat-memories-footer">
+I still have all of these.
+<br />
+Every single one.
+</p>
+</div>
+</section>
+);
+}
+function PromiseScene({ onMood }) {
+const [callState, setCallState] = useState("idle");
+const [callTime, setCallTime] = useState(0);
+const [visible, setVisible] = useState(false);
+const ref = useRef(null);
+
+useEffect(() => {
+const el = ref.current;
+if (!el) return;
+const obs = new IntersectionObserver(
+([e]) => {
+if (e.isIntersecting) {
+setVisible(true);
+if (typeof onMood === "function") onMood("stand");
+}
+},
+{ threshold: 0.15 }
+);
 obs.observe(el);
 return () => obs.disconnect();
 }, [onMood]);
+
+useEffect(() => {
+if (callState !== "connected") return;
+const t = setInterval(() => setCallTime((p) => p + 1), 1000);
+return () => clearInterval(t);
+}, [callState]);
+
+const handleCall = () => {
+setCallState("calling");
+setTimeout(() => setCallState("ringing"), 1500);
+setTimeout(() => setCallState("connected"), 5000);
+};
+
+const handleEnd = () => {
+setCallState("idle");
+setCallTime(0);
+};
+
+const formatTime = (s) =>
+`${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+
 return (
 <section ref={ref} className={`promise-scene ${visible ? "in-view" : ""}`}>
 <div className="promise-stars">
-{Array.from({ length: 30 }).map((_, i) => (
-<span key={i} className="star" style={{
+{Array.from({ length: 40 }).map((_, i) => (
+<span
+key={i}
+className="star"
+style={{
 left: `${Math.random() * 100}%`,
 top: `${Math.random() * 100}%`,
-animationDelay: `${Math.random() * 3}s`,
-}} />
+animationDelay: `${Math.random() * 4}s`,
+animationDuration: `${2 + Math.random() * 3}s`,
+}}
+/>
 ))}
 </div>
+
+<div className="promise-aurora" />
+<div className="promise-glow" />
+
 <div className="promise-inner">
-<p className="p-small">Bhumi,
+<div className="promise-header">
+<span className="promise-line" />
+<span className="promise-badge">💌</span>
+<span className="promise-line" />
+</div>
 
-I am really, really, really sorry.
-A million times sorry.
-
-Once, you cared for me
-more than I deserved.
-Let me care for you once again —
-more and more, for infinite times.
-A million times sorry.
-
-You don't need to love me.
-You don't need to feel anything like that.
-Do what you want. Be blessed a thousand times.
-Find the one you want.
-
-No hope from you anymore.
-Not wanting anything from you.
-
-But please, please, please —
-don't end the things like this.
-The things we built in four months.
-
-It didn't take me three weeks to ignore you.
-It took me three weeks to understand myself,
-to undo the feelings I had for you.
-
-Finally, I am that Jay
-you met four months ago.
-
-Let's be that again —
-that Bhumi or Jay.
-
-Please. Please. Please.</p>
+<p className="p-small">A promise you once made</p>
+<h2 className="promise-title">Bhumi,</h2>
 
 <div className="promise-quote-box">
-<p className="p-quote">
-"Whenever you're in problem
-or feel too down…<br />
-come to me.<br />
-I'm here to take that promise from you."
-</p>
+<span className="quote-mark">"</span>
+<p className="p-quote">Can we Talk'?</p>
+<span className="quote-mark end">"</span>
 </div>
-</div>
-{!called ? (
-<button className="call-btn" onClick={() => setCalled(true)}>
-<span className="phone">📞</span>
+
+<div className="call-container">
+{callState === "idle" && (
+<button className="call-btn" onClick={handleCall}>
+<span className="call-icon">📞</span>
 <span className="call-label">call me once</span>
 <span className="pulse-ring" />
 <span className="pulse-ring delay" />
 <span className="btn-glow" />
 </button>
-) : (
-<div className="call-happening">
-<div className="ringing">
-<span className="ring-dot" />
-<span className="ring-dot" />
-<span className="ring-dot" />
+)}
+
+{callState === "calling" && (
+<div className="call-screen">
+<div className="call-avatar">
+<span className="call-avatar-emoji">👤</span>
+<span className="call-avatar-ring" />
+<span className="call-avatar-ring delay" />
 </div>
-<p className="ring-sub">calling… waiting for you.</p>
+<p className="call-name">Bhumi</p>
+<p className="call-status">Calling…</p>
+<div className="call-dots">
+<span /><span /><span />
+</div>
+<button className="call-end-btn" onClick={handleEnd}>
+<span className="end-icon">✕</span>
+</button>
 </div>
 )}
+
+{callState === "ringing" && (
+<div className="call-screen">
+<div className="call-avatar shake">
+<span className="call-avatar-emoji">👤</span>
+</div>
+<p className="call-name">Bhumi</p>
+<p className="call-status">Ringing…</p>
+<div className="ring-wave">
+<span /><span /><span /><span /><span />
+</div>
+<button className="call-end-btn" onClick={handleEnd}>
+<span className="end-icon">✕</span>
+</button>
+</div>
+)}
+
+{callState === "connected" && (
+<div className="call-screen">
+<div className="call-avatar connected">
+<span className="call-avatar-emoji">👤</span>
+<span className="call-avatar-pulse" />
+</div>
+<p className="call-name">Bhumi</p>
+<p className="call-timer">{formatTime(callTime)}</p>
+<div className="call-voice-bars">
+{Array.from({ length: 5 }).map((_, i) => (
+<span key={i} style={{ animationDelay: `${i * 0.15}s` }} />
+))}
+</div>
+<button className="call-end-btn" onClick={handleEnd}>
+<span className="end-icon">✕</span>
+</button>
+</div>
+)}
+</div>
+</div>
 </section>
 );
 }
 
 function Ending() {
+
 return (
 <section className="ending">
 <div className="ending-glow" />
-<p className="end-line">I did everything I imagined.</p>
 <div className="end-options">
-<p className="end-sub">— the girl who once cried alone?</p>
-<span className="end-or">became</span>
-<p className="end-sub end-sub-highlight">— the woman who built her own world.</p>
 </div>
 <div className="end-credit">
 <span className="credit-line" />
-<p>THE LAST SHOW · PART 2</p>
 <span className="credit-line" />
 </div>
 </section>
@@ -443,7 +640,6 @@ const [intro, setIntro] = useState(true);
 const [countdown, setCountdown] = useState(null);
 const [progress, setProgress] = useState(0);
 const [mood, setMood] = useState("calm");
-const [songOn, setSongOn] = useState(false);
 const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
 useEffect(() => {
@@ -454,7 +650,7 @@ setCountdown(steps[0]);
 const t = setInterval(() => {
 i++;
 if (i < steps.length) setCountdown(steps[i]);
-else { clearInterval(t); setIntro(false); setSongOn(true); }
+else { clearInterval(t); setIntro(false); }
 }, 900);
 return () => clearInterval(t);
 }, [intro]);
@@ -506,7 +702,7 @@ return (
 
 <header className="app-header">
 <div className="header-badge">A CINEMATIC STORY</div>
-<h1 className="app-title">You Can Still Rewrite This</h1>
+<h1 className="app-title">You Can Still Rewrite This Bhumii...</h1>
 <p className="app-tagline">a story that only you can see</p>
 <div className="header-scroll-hint">
 <span className="scroll-mouse"><span className="scroll-wheel" /></span>
@@ -518,17 +714,14 @@ return (
 {storyData.map((item) => (
 <Scene key={item.id} item={item} onMood={handleMood} />
 ))}
-<Letter onMood={handleMood} />
+
+<ChatMemories />
+
+<SorryScene />
+
 <PromiseScene onMood={handleMood} />
 <Ending />
 </main>
-
-<SongPlayer active={songOn} />
-
-<footer className="app-footer">
-<div className="footer-line" />
-<p>© {new Date().getFullYear()} · Every word here is a heartbeat</p>
-</footer>
 </div>
 );
 }

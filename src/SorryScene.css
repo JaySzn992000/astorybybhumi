@@ -1,0 +1,149 @@
+/* ================= SORRY SCENE — SAME VIBE AS CHAT ================= */
+.sorry-scene {
+  position: relative;
+  min-height: 100vh;
+  padding: 160px 24px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 5;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(180, 120, 255, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 80%, rgba(255, 158, 199, 0.06) 0%, transparent 55%),
+    linear-gradient(180deg, #06070d 0%, #04050a 100%);
+}
+
+/* Subtle grain */
+.sorry-scene::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 3px 3px;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.sorry-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.8s ease, transform 1.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.sorry-scene.in-view .sorry-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Label */
+.sorry-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #c98aff;
+  margin-bottom: 14px;
+}
+
+/* Title — gradient shimmer */
+.sorry-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  font-style: italic;
+  background: linear-gradient(90deg, #ff9ec7, #d9a7ff, #9ec5ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 8s linear infinite;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+@keyframes shimmer {
+  from { background-position: 0% 0; }
+  to { background-position: 200% 0; }
+}
+
+/* Divider */
+.sorry-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 24px 0 48px;
+}
+
+.sorry-divider span {
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 150, 255, 0.4), transparent);
+}
+
+.sorry-divider i {
+  color: #c98aff;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* ========= PARAGRAPH — SAME GRADIENT COLOUR ========= */
+.sorry-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.6rem);
+  line-height: 2.1;
+  letter-spacing: 0.3px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+
+  /* Same gradient as title */
+  background: linear-gradient(90deg, #ff9ec7, #d9a7ff, #9ec5ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 10s linear infinite;
+}
+
+/* Signature */
+.sorry-signature {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.15rem, 2vw, 1.3rem);
+  font-style: italic;
+  color: #b8aad8;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+/* Name */
+.sorry-name {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  font-style: italic;
+  font-weight: 500;
+  background: linear-gradient(90deg, #ff9ec7, #d9a7ff, #9ec5ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 8s linear infinite;
+  letter-spacing: 3px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .sorry-scene { padding: 100px 20px 80px; }
+  .sorry-title { font-size: 1.8rem; }
+  .sorry-text { font-size: 1.15rem; line-height: 2; margin-bottom: 40px; }
+  .sorry-signature { font-size: 1rem; }
+  .sorry-name { font-size: 1.15rem; }
+  .sorry-divider { margin: 18px 0 32px; }
+}
