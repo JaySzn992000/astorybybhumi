@@ -702,8 +702,8 @@ return (
 
 <header className="app-header">
 <div className="header-badge">A CINEMATIC STORY</div>
-<h1 className="app-title">You Can Still Rewrite This Bhumii...</h1>
-<p className="app-tagline">a story that only you can see</p>
+<h1 className="app-title">A Million's Sorry from Me..But You Can Still Rewrite This...</h1>
+<p className="app-tagline">A story of Bhumii...</p>
 <div className="header-scroll-hint">
 <span className="scroll-mouse"><span className="scroll-wheel" /></span>
 <span className="scroll-text">scroll to begin</span>
