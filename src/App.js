@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import video2_1 from "./Images/2.1video.mp4";
+import video2_2 from "./Images/2.2video.mp4"
 import img1 from "./Images/1.jpeg";
 import img2 from "./Images/2.jpeg";
 import img3 from "./Images/3.jpeg";
@@ -51,31 +52,34 @@ import SorryScene from "./SorryScene";
 import "./App.css";
 
 const storyData = [
-{ id: 1, image: img1, chapter: "Chapter One", title: "Bhumii, A Happy Extrovert Girl...", act: "act1", mood: "happy",
+{ id: 1, image: img1, chapter: "Chapter One", title: "Bhumii, A Happy Extrovert Girl.", act: "act1", mood: "happy",
 shayari: `She laughed like sunlight spilling through windows,\nTalked to strangers like they were old friends.\nThe world was her stage, and every day — a song,\nShe never knew silence could ever feel wrong.` },
-{ id: 2, video: video2_1, chapter: "Chapter Two", title: "The Hidden Shayarie's She Write's.", act: "act1", mood: "happy",
+{ id: 2, video: video2_1, chapter: "Chapter Two", title: "The Hidden Shayari She Writes.", act: "act1", mood: "happy",
 shayari: `In a little notebook, hidden from sight,\nShe poured out her heart every single night.\nWords she couldn't speak, feelings she couldn't show,\nHer shayaris became the only place she'd go.` },
 { id: 3, image: img2, chapter: "Chapter Three", title: "A Quiet Stranger.", act: "act1", mood: "happy",
 shayari: `One ordinary evening, one ordinary office,\nA Quiet stranger's sit's across her desk' front.\nShe asked for a chai, he looked confused, then said yes,\nAnd that's where it all began.\n` },
 { id: 4, image: img3, chapter: "Chapter Four", title: "A Quiet Guy.", act: "act1", mood: "happy",
 shayari: `He spoke in whispers, looked down when he smiled,\nCarried a silence that felt like a child.\nShe was the storm, he was the calm in the sea,\nTwo different worlds — what happens Later Let's see...` },
-{ id: 5, image: img4, chapter: "Chapter Five", title: "Get's Her Shayarie's Diary.", act: "act1", mood: "happy",
+{ id: 5, image: img4, chapter: "Chapter Five", title: "Get's Her Shayari Of Diary.", act: "act1", mood: "happy",
 shayari: `One day he asked her for her shayari's. she gave him her little diary." quietly, without a word. "I write what I feel, I can't say it out loud," She gave it to a stranger — her whole world that night.` },
-{ id: 6, image: img5, chapter: "Chapter Six", title: "Read's Her Heart Through Shayarie's.", act: "act1", mood: "happy",
+{ id: 6, image: img5, chapter: "Chapter Six", title: "Read's Her Heart Through Shayari.", act: "act1", mood: "happy",
 shayari: `Page after page, he felt her pain,\nHer hidden storms, her silent rain.\nHe realised then, in that quiet room That\n Extrovert girl was empty in her heart, Her\n smile was a mask for a quiet gloom.` },
 { id: 7, image: img6, chapter: "Chapter Seven", title: "The Pen He Never Thought He'd Hold.", act: "act2", mood: "calm",
 shayari: `He picked up a pen he never thought he'd hold,\nWrote her a shayari, shy and bold.\nFor the first time in his life, words found his hand,\nA language he never knew he'd understand.` },
-{ id: 8, image: img7, chapter: "Chapter Eight", title: "Both Started Writing Shayarie's.", act: "act2", mood: "calm",
+{ id: 8, image: img7, chapter: "Chapter Eight", title: "Both Started Writing Shayari.", act: "act2", mood: "calm",
 shayari: `Two pens, two hearts, one beautiful rhyme,\nTheir thought's filled the pages, one line at a time.\nThey wrote of stars, of dreams, of fears,\nOf laughter, of loss, of unshed tears of love, of  \n silence, Two souls writing what they never knew.` },
-{ id: 9, image: img8, chapter: "Chapter Nine", title: "The Message's Call's That Never Ended All Day & Night.", act: "act2", mood: "calm",
+{ id: 9, image: img8, chapter: "Chapter Nine", title: "The Never-Ending Talk's.", act: "act2", mood: "calm",
 shayari: `Messages at midnight, calls at dawn,\nTheir voices tangled like a favourite song.\nThe world slept on, but they stayed awake,\n Not in love, but something deeper Two people \n who became each other's strength,
 Teaching, supporting emotionally, learning about life, \n standing side by side,
 In every up and down, in every tide..` },
-{ id: 10, image: img9, chapter: "Chapter Ten", title: "Hanging Out as Just Friend's.", act: "act2", mood: "calm",
+{ id: 10, image: img9, chapter: "Chapter Ten", title: "The First Hang-Out As Friends.", act: "act2", mood: "calm",
 shayari: `They start's hangout — ,\n Coffee shops, long walks, silly fights, \n Endless laughter under city lights. \n Just two friends -- nothing more, nothing less,
 But a quiet comfort grows day by day, When they meet face to face.` },
 { id: 11, image: img10, chapter: "Chapter Eleven", title: "A Pencil, A Paper, He Drew Her Face.", act: "act2", mood: "calm",
 shayari: `With a pencil and patience, he drew her face,\nEvery line, every curve, every hidden grace.\nShe looked at it speechless — eyes wet and bright,\n"You made me look beautiful.".` },
+{ id: 2, video: video2_2, chapter: "Chapter Eleven", title: "Thread By Thread.", act: "act1", mood: "happy",
+shayari: `He tried. He failed. But he made her sketch.
+Not perfectly. But honestly.` },
 { id: 12, image: img11, chapter: "Chapter Twelve", title: "The Headphone Gift ' From Her.", act: "act2", mood: "calm",
 shayari: `She gifted him headphones, quiet and small,\n"For the boy who walked alone through it all."\n He'd listen to songs all day, every day, Lost  \n  in his Music's far away, Now that \n headphones he use's all the day like \n it is a part of his life.` },
 { id: 13, image: img12, chapter: "Chapter Thirteen", title: "Then The Fight Began", act: "act3", mood: "shock",
@@ -90,7 +94,7 @@ shayari: `The chats went cold, the calls went dead,\nOnly her diary knew what sh
 shayari: `I know you're hurting — more than words can hold,\nI know your heart feels heavy, dark and cold.\nI'm not here to justify or defend,\nI'm here because I never wanted this end.` },
 // { id: 16, image: img15, chapter: "Chapter Sixteen", title: "I Am Trying My Best", act: "act4", mood: "sad",
 // shayari: `I'm trying my best — in ways you can't see,\nTo become the person you needed me to be.\nEvery apology I write, every tear I hide,\nCarries the weight of the day you cried.` },
-{ id: 17, image: img16, chapter: "Chapter Seventeen", title: "The Emptine's.", act: "act4", mood: "sad",
+{ id: 17, image: img16, chapter: "Chapter Seventeen", title: "The Emptine'ss.", act: "act4", mood: "sad",
 shayari: `She smiles at the world, but her eyes don't lie,\nThere's a storm behind every "I'm fine, don't ask why."\n I Know You hate me now but i don't want this end,\n please give me a chance so that every things \n happens again well.` },
 // { id: 18, image: img36, chapter: "Chapter Eighteen", title: "She Can't Handle It", act: "act4", mood: "sad",
 // shayari: `It's too heavy now — the silence, the pain,\nEvery memory falls like unforgiving rain.\nShe closes her diary, holds it to her chest,\nAnd whispers to the dark, "I tried my best."` },
@@ -106,28 +110,28 @@ shayari: `This isn't the end. This is where your story begins. \n The fight, the
 not the whole book. Now it's your turn. Your dreams. \n Your flight. Your city. Your shelter. Your teddies. Your home. \n No one to wait for. No one to explain to. Just you — And everything you ever imagined."` },
 { id: 22, image: img22, chapter: "Chapter Twenty-Two", title: "Delhi To Bangalore.", act: "act5", mood: "hope",
 shayari: `I know that one day you. From Delhi's dust to Bangalore's rain,\n A girl with a suitcase and a heart with full of dreams.\nShe'll left behind the streets that knew her cry,\nTo find the version of herself that wouldn't die.` },
-{ id: 23, image: img23, chapter: "Chapter Twenty-Three", title: "The Flight, You're first Love.", act: "act5", mood: "hope",
+{ id: 23, image: img23, chapter: "Chapter Twenty-Three", title: "The Flight, Your first Love.", act: "act5", mood: "hope",
 shayari: `Above the clouds, she'll watched the world shrink small,\nEvery chapter, every fight — suddenly so small.\nShe pressed her forehead to the window pane,\nAnd whispered, "I'm not who I was — not again."` },
 // { id: 24, image: img24, chapter: "Chapter Twenty-Four", title: "A New Sky", act: "act5", mood: "hope",
 // shayari: `Bangalore greeted her with a different light,\nWarm and soft, and strangely bright.\nShe stepped out of the airport, took a breath,\nAnd felt something inside her come back from death.` },
 // { id: 25, image: img25, chapter: "Chapter Twenty-Five", title: "Her First Job Interview", act: "act5", mood: "hope",
 // shayari: `A crisp white shirt, a nervous smile,\nA resume she'd rewritten a hundred times, mile by mile.\nShe walked into the room like she owned the place,\nAnd the world saw the girl behind the face.` },
-{ id: 26, image: img26, chapter: "Chapter Twenty-Six", title: "You're first Job in Banglore.", act: "act5", mood: "hope",
+{ id: 26, image: img26, chapter: "Chapter Twenty-Six", title: "Your first Job in Banglore.", act: "act5", mood: "hope",
 shayari: `The email came at 11:47 pm,\n"We're happy to inform you" — and she cried in the dark.\nNot from sadness — but from something new,\nA girl who once felt nothing, finally knew.` },
-{ id: 27, image: img27, chapter: "Chapter Twenty-Seven", title: "Working Her Dream Job.", act: "act5", mood: "hope",
+{ id: 27, image: img27, chapter: "Chapter Twenty-Seven", title: "Working Your Dream Job.", act: "act5", mood: "hope",
 shayari: `Mornings with coffee, evenings with code,\nColleagues who became friends, and a life that glowed.\nShe built things with her hands and her mind,\nAnd slowly, she left the old her behind.` },
 // { id: 28, image: img28, chapter: "Chapter Twenty-Eight", title: "She Was Good At It", act: "act5", mood: "hope",
 // shayari: `They praised her work, they said her name,\nAnd for once, it didn't feel like a game.\nShe was good — not because someone told her so,\nBut because she finally believed it, slow and slow.` },
-{ id: 29, image: img29, chapter: "Chapter Twenty-Nine", title: "The House She Dreamt Of.", act: "act5", mood: "hope",
+{ id: 29, image: img29, chapter: "Chapter Twenty-Nine", title: "The House You Dreamt Of.", act: "act5", mood: "hope",
 shayari: `One day she'll build a house with big windows and \n warm light, Plants on the sill, books by her side at night.\nShe painted the walls the colour of her soul,\nAnd for the first time she felt she achieved everthing \n once she dreamt of.` },
-{ id: 30, image: img30, chapter: "Chapter Thirty", title: "Your Dream: A Shelter for Animal's.", act: "act5", mood: "hope",
+{ id: 30, image: img30, chapter: "Chapter Thirty", title: "Your Dream: A Shelter for Animals.", act: "act5", mood: "hope",
 shayari: `One day she will build a home for animals, \n Where they will live and love each other.
 A place where love begins, Where she cares for them \n  — forever.` },
-{ id: 31, image: img31, chapter: "Chapter Thirty-One", title: "She Cared For Them", act: "act5", mood: "hope",
+{ id: 31, image: img31, chapter: "Chapter Thirty-One", title: "She Cared For Them.", act: "act5", mood: "hope",
 shayari: `Every morning you'll feed them with your own hands,\n will Give names to the ones who'd been abandoned by lands.\nyou'll give them water, medicine, and love,\nAnd they'll give you back a peace from above.` },
 // { id: 32, image: img32, chapter: "Chapter Thirty-Two", title: "They Loved Her Back", act: "act5", mood: "hope",
 // shayari: `The dogs would run to her when she came,\nThe cats would curl up and whisper her name.\nShe realised then — love doesn't need words,\nIt just needs someone who truly cares.` },
-{ id: 33, image: img33, chapter: "Chapter Thirty-Three", title: "A World: for Animal's.", act: "act5", mood: "hope",
+{ id: 33, image: img33, chapter: "Chapter Thirty-Three", title: "A World: for Animals.", act: "act5", mood: "hope",
 shayari: `Word spread, people came, help arrived,\nAnd the little shelter she built — thrived.\nShe wasn't just a girl anymore, she was a home,\nFor every soul that had ever felt alone.` },
 { id: 34, image: img34, chapter: "Chapter Thirty-Four", title: "Her Teddy Collection — After All Her Dream's.", act: "act5", mood: "hope",
 shayari: `On her bed sat teddies — soft, old, and new,\nEach one a memory she'd held onto.\nFrom childhood to now, they'd watched her grow,\nAnd they knew every secret she'd never let show.` },
@@ -368,7 +372,7 @@ label: "Chat 2",
 {
 img: chat4,
 topLine: "4 weeks ago, you said…",
-title: "Bhumii Once you said me... close one ka life sa jana why this so normalised ....??? but why Now for each other ??? ...",
+title: "Bhumii Once you said me... close one ka life sa jana why this so normalised ....??? but why Now for each other ? ...",
 time: "9:29 pm",
 label: "Chat 2",
 },
@@ -390,7 +394,7 @@ label: "Chat 2",
 {
 img: chat7,
 topLine: "4 weeks ago, you said…",
-title: "What boy's does in Love... ??? Efforts, Even I've undone those feelings... But I don't want anything to end like this.",
+title: "What boy's does in Love... ??? Efforts, Not Love this time ... But I don't want anything to end like this.",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -414,7 +418,7 @@ label: "Chat 2",
 {
 img: chat11,
 topLine: "4 weeks ago, you said…",
-title: "Now I understand what those lines meant... what you could'not handle ...",
+title: "Now I understand what those lines meant... what you could'not handle. Where I was Wrong...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -702,7 +706,7 @@ return (
 
 <header className="app-header">
 <div className="header-badge">A CINEMATIC STORY</div>
-<h1 className="app-title">A Million's Sorry from Me..But You Can Still Rewrite This...</h1>
+<h1 className="app-title">A Million's Sorry. But You Can Still Rewrite This...</h1>
 <p className="app-tagline">A story of Bhumii...</p>
 <div className="header-scroll-hint">
 <span className="scroll-mouse"><span className="scroll-wheel" /></span>
