@@ -48,6 +48,8 @@ import chat8 from "./Images/chat8.jpg";
 import chat9 from"./Images/36.jpg";
 import chat10 from"./Images/chat9.jpeg";
 import chat11 from"./Images/chat10.jpeg";
+import chat12 from"./Images/chat12.jpeg";
+import chat13 from"./Images/chat13.png";
 import SorryScene from "./SorryScene";
 import "./App.css";
 
@@ -418,7 +420,24 @@ label: "Chat 2",
 {
 img: chat11,
 topLine: "4 weeks ago, you said…",
-title: "Now I understand what those lines meant... what you could'not handle. Where I was Wrong...",
+title: "Now I understand what those lines meant... koi koi shakhs itna khass kyuu hota hain...",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+{
+img: chat12,
+topLine: "4 weeks ago, you said…",
+title: "But I Started Prayer...",
+time: "9:29 pm",
+label: "Chat 2",
+}
+,
+,
+{
+img: chat13,
+topLine: "4 weeks ago, you said…",
+title: "...",
 time: "9:29 pm",
 label: "Chat 2",
 }

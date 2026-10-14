@@ -35,6 +35,12 @@ Bhumi…
 I'm really, really sorry.
 A million times sorry.
 
+I Know You've Lots Of Dreams.
+Lot's Of Pure Heart Lot's Of Care
+
+I'Know You Have a Long Journey In Life.
+I Do Understand...
+
 Once, you cared for me
 more than I deserved.
 
@@ -63,7 +69,6 @@ And that safe place
 can't just disappear
 because of one mistake.
 
-So I'm not asking for love.
 I'm not asking for forever.
 
 I'm just asking —
@@ -76,6 +81,17 @@ That Bhumi.
 That Jay.
 
 Please.
+
+I just want someone —
+
+Bhale hi hum roz baat na kare,
+bhale hi hum kuch na bole.
+
+But tum ho na saath mein —
+tou bas, it feels like sukoon.
+
+that's it nothing more than that.
+
 </p>
 
 <p className="sorry-name">From — Jay</p>
