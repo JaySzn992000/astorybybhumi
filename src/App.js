@@ -352,7 +352,7 @@ const chats = [
 {
 img: chat1,
 topLine: "3 weeks ago, you asked…",
-title: "Kyu kya hua? Bhumi Please once you said me these lines Can we live like this ? ... not love but this... ",
+title: "Can we live like this ? ... not love but this... ",
 time: "11:47 pm",
 label: "Chat 1",
 },
@@ -366,7 +366,7 @@ label: "Chat 2",
 {
 img: chat3,
 topLine: "4 weeks ago, you said…",
-title: "Once You told I'm Scared of being Alone... I didn't understand it then. Now I do...",
+title: "Once You told I'm Scared of being Alone...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -374,14 +374,14 @@ label: "Chat 2",
 {
 img: chat4,
 topLine: "4 weeks ago, you said…",
-title: "Bhumii Once you said me... close one ka life sa jana why this so normalised ....??? but why Now for each other ? ...",
+title: "Bhumii Once you said me... close one ka life sa jana why this so normalised ???",
 time: "9:29 pm",
 label: "Chat 2",
 },
 {
 img: chat5,
 topLine: "4 weeks ago, you said…",
-title: "How much We were Deep ... ??? but I know meaning of these line's Bhumii... That's why i am doing these all things...Remember? You' belong to these line's...",
+title: "How much We were Deep ...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -389,14 +389,14 @@ label: "Chat 2",
 {
 img: chat6,
 topLine: "4 weeks ago, you said…",
-title: "A Bhumii I Lost... I may not hope to Expect this Again... but the same I did in hesitation with you... not to bother you...",
+title: "I did the same in hesitation with you... not to bother you...",
 time: "9:29 pm",
 label: "Chat 2",
 },
 {
 img: chat7,
 topLine: "4 weeks ago, you said…",
-title: "What boy's does in Love... ??? Efforts, Not Love this time ... But I don't want anything to end like this.",
+title: "What boy's does in Love...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -412,7 +412,7 @@ label: "Chat 2",
 {
 img: chat10,
 topLine: "4 weeks ago, you said…",
-title: "Once you told me... Any Problem U Can share Me...",
+title: "A Bhumii, Any Problem U Can share Me...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -420,7 +420,7 @@ label: "Chat 2",
 {
 img: chat11,
 topLine: "4 weeks ago, you said…",
-title: "Now I understand what those lines meant... koi koi shakhs itna khass kyuu hota hain...",
+title: "Now I understand...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -428,7 +428,7 @@ label: "Chat 2",
 {
 img: chat12,
 topLine: "4 weeks ago, you said…",
-title: "But I Started Prayer...",
+title: "But I Prayer...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -445,7 +445,7 @@ label: "Chat 2",
 {
 img: chat9,
 topLine: "4 weeks ago, you said…",
-title: "Bhumii... Please listen to that heart you once had for me. I genuinely promise — I won't bother you, I won't hurt you, not playing with you... May Krishna bless us this time. Please —",
+title: "Bhumii... Once listen to that heart you had for me. I genuinely promise — I won't bother you, I won't hurt you, not playing with you... May Krishna bless us this time. Please —",
 time: "9:29 pm",
 label: "Chat 2",
 }

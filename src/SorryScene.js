@@ -82,16 +82,6 @@ Let's be that again.
 That Bhumi.
 That Jay.
 
-Please.
-
-I just want someone —
-
-Bhale hi hum roz baat na kare,
-bhale hi hum kuch na bole.
-
-But tum ho na saath mein —
-tou bas, it feels like sukoon.
-
 that's it nothing more than that.
 
 </p>
