@@ -51,6 +51,7 @@ import chat11 from"./Images/chat10.jpeg";
 import chat12 from"./Images/chat12.jpeg";
 import chat13 from"./Images/chat13.png";
 import SorryScene from "./SorryScene";
+import song from "./Images/song.mpeg";
 import "./App.css";
 
 const storyData = [
@@ -74,7 +75,7 @@ shayari: `Two pens, two hearts, one beautiful rhyme,\nTheir thought's filled the
 shayari: `Messages at midnight, calls at dawn,\nTheir voices tangled like a favourite song.\nThe world slept on, but they stayed awake,\n Not in love, but something deeper Two people \n who became each other's strength,
 Teaching, supporting emotionally, learning about life, \n standing side by side,
 In every up and down, in every tide..` },
-{ id: 10, image: img9, chapter: "Chapter Ten", title: "The First Hang-Out As Friends.", act: "act2", mood: "calm",
+{ id: 10, image: img9, chapter: "Chapter Ten", title: "The First Hang-Out.", act: "act2", mood: "calm",
 shayari: `They start's hangout — ,\n Coffee shops, long walks, silly fights, \n Endless laughter under city lights. \n Just two friends -- nothing more, nothing less,
 But a quiet comfort grows day by day, When they meet face to face.` },
 { id: 11, image: img10, chapter: "Chapter Eleven", title: "A Pencil, A Paper, He Drew Her Face.", act: "act2", mood: "calm",
@@ -664,6 +665,39 @@ const [countdown, setCountdown] = useState(null);
 const [progress, setProgress] = useState(0);
 const [mood, setMood] = useState("calm");
 const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+const [songStarted, setSongStarted] = useState(false);
+const audioRef = useRef(null);
+
+// AUTOPLAY TRICK WITH MUTE & REPEAT
+useEffect(() => {
+const audio = audioRef.current;
+if (!audio) return;
+
+// 1. Audio ko mute karo taaki browser block na kare
+audio.muted = true;
+
+// 2. Play karo
+audio.play()
+.then(() => {
+setSongStarted(true);
+// 3. Play hone ke baad 1 second baad unmute kar do
+setTimeout(() => {
+audio.muted = false;
+}, 1000);
+})
+.catch((err) => {
+console.log("Autoplay blocked by browser. Waiting for user click.");
+// Agar phir bhi block ho, toh pehle click pe unmute hoke play karo
+const onFirstClick = () => {
+audio.muted = false;
+audio.play().catch(() => {});
+window.removeEventListener("click", onFirstClick);
+};
+window.addEventListener("click", onFirstClick);
+});
+
+// Loop hamesha on rahega audio tag mein
+}, []);
 
 useEffect(() => {
 if (!intro) return;
@@ -694,11 +728,43 @@ window.addEventListener("mousemove", onMove);
 return () => window.removeEventListener("mousemove", onMove);
 }, []);
 
+
+// Song Auto-Play & Repeat Effect
+useEffect(() => {
+const playAudio = () => {
+if (audioRef.current && !songStarted) {
+audioRef.current.play()
+.then(() => setSongStarted(true))
+.catch(() => {
+// Agar browser block kare, toh first user interaction (click/scroll/touch) pe chalao
+const startOnInteraction = () => {
+audioRef.current.play()
+.then(() => setSongStarted(true))
+.catch(() => {});
+window.removeEventListener("click", startOnInteraction);
+window.removeEventListener("scroll", startOnInteraction);
+window.removeEventListener("touchstart", startOnInteraction);
+};
+window.addEventListener("click", startOnInteraction);
+window.addEventListener("scroll", startOnInteraction);
+window.addEventListener("touchstart", startOnInteraction);
+});
+}
+};
+
+// Thoda delay taaki DOM load ho jaye
+const timer = setTimeout(playAudio, 500);
+
+return () => clearTimeout(timer);
+}, [songStarted]);
+
 const handleMood = useCallback((m) => setMood(m), []);
 const moodClass = useMemo(() => `mood-${mood}`, [mood]);
 
 return (
+
 <div className={`app ${moodClass}`}>
+<audio ref={audioRef} src={song} loop playsInline preload="auto" />
 <div className="film-grain" />
 <div className="letterbox top" />
 <div className="letterbox bottom" />
