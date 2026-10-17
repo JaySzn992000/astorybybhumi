@@ -41,6 +41,11 @@ Lot's Of Pure Heart Lot's Of Care
 I'Know You Have a Long Journey In Life.
 I Do Understand...
 
+ I Just get to know walk away from anyone.
+
+"It wasn't ego. It wasn't anger. It was just emotion's
+Which was done by me Mistakenly... 
+
 Once, you cared for me
 more than I deserved.
 
@@ -81,6 +86,8 @@ Let's be that again.
 
 That Bhumi.
 That Jay.
+
+<br></br>
 
 Just Friend's...
 
