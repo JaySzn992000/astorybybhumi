@@ -60,41 +60,42 @@ shayari: `She laughed like sunlight spilling through windows,\nTalked to strange
 { id: 2, video: video2_1, chapter: "Chapter Two", title: "The Hidden Shayari She Writes.", act: "act1", mood: "happy",
 shayari: `In a little notebook, hidden from sight,\nShe poured out her heart every single night.\nWords she couldn't speak, feelings she couldn't show,\nHer shayaris became the only place she'd go.` },
 { id: 3, image: img2, chapter: "Chapter Three", title: "A Quiet Stranger.", act: "act1", mood: "happy",
-shayari: `One ordinary evening, one ordinary office,\nA Quiet stranger's sit's across her desk' front.\nShe asked for a chai, he looked confused, then said yes,\nAnd that's where it all began.\n` },
+shayari: `One ordinary evening, one ordinary office,\nA Quiet stranger' sit's across her desk' front.\nShe asked for a chai, he looked confused, then said yes,\nAnd that's where it all began.\n` },
 { id: 4, image: img3, chapter: "Chapter Four", title: "A Quiet Guy.", act: "act1", mood: "happy",
-shayari: `He spoke in whispers, looked down when he smiled,\nCarried a silence that felt like a child.\nShe was the storm, he was the calm in the sea,\nTwo different worlds — what happens Later Let's see...` },
-{ id: 5, image: img4, chapter: "Chapter Five", title: "Get's Her Shayari Of Diary.", act: "act1", mood: "happy",
-shayari: `One day he asked her for her shayari's. she gave him her little diary." quietly, without a word. "I write what I feel, I can't say it out loud," She gave it to a stranger — her whole world that night.` },
+shayari: `He spoke in whispers, looked down when he smiled,\nCarried a silence that felt like a child.\n` },
+{ id: 5, image: img4, chapter: "Chapter Five", title: "Get's Shayari Of Diary.", act: "act1", mood: "happy",
+shayari: `One day he asked her for her shayari's. she gave him her little diary." quietly, without a word. "I write what I feel, I can't say it out loud," She gave it to a stranger —` },
 { id: 6, image: img5, chapter: "Chapter Six", title: "Read's Her Heart Through Shayari.", act: "act1", mood: "happy",
 shayari: `Page after page, he felt her pain,\nHer hidden storms, her silent rain.\nHe realised then, in that quiet room That\n Extrovert girl was empty in her heart, Her\n smile was a mask for a quiet gloom.` },
 { id: 7, image: img6, chapter: "Chapter Seven", title: "The Pen He Never Thought He'd Hold.", act: "act2", mood: "calm",
-shayari: `He picked up a pen he never thought he'd hold,\nWrote her a shayari, shy and bold.\nFor the first time in his life, words found his hand,\nA language he never knew he'd understand.` },
+shayari: `He picked up a pen he never thought he'd hold,\nWrote a shayari, shy and bold.\nFor the first time in his life, words found his hand,\nA language he never knew he'd understand.` },
 { id: 8, image: img7, chapter: "Chapter Eight", title: "Both Started Writing Shayari.", act: "act2", mood: "calm",
-shayari: `Two pens, two hearts, one beautiful rhyme,\nTheir thought's filled the pages, one line at a time.\nThey wrote of stars, of dreams, of fears,\nOf laughter, of loss, of unshed tears of love, of  \n silence, Two souls writing what they never knew.` },
-{ id: 9, image: img8, chapter: "Chapter Nine", title: "The Never-Ending Talk's.", act: "act2", mood: "calm",
-shayari: `Messages at midnight, calls at dawn,\nTheir voices tangled like a favourite song.\nThe world slept on, but they stayed awake,\n Not in love, but something deeper Two people \n who became each other's strength,
+shayari: `Their thought's filled the pages, one line at a time.\nThey wrote of stars, of dreams, of fears,\nOf laughter, of loss, of unshed tears of love, of  \n silence, Both started writing what they never knew.` },
+{ id: 9, image: img8, chapter: "Chapter Nine", title: "Never-Ending Talk's Only as Friends.", act: "act2", mood: "calm",
+shayari: `Messages at midnight, calls at dawn,\nTheir voices tangled like a favourite song.\nThe world slept on, but they stayed awake,\n Not in love, but as friends only but something deeper Two people \n who became each other's strength,
 Teaching, supporting emotionally, learning about life, \n standing side by side,
 In every up and down, in every tide..` },
-{ id: 10, image: img9, chapter: "Chapter Ten", title: "The First Hang-Out.", act: "act2", mood: "calm",
-shayari: `They start's hangout — ,\n Coffee shops, long walks, silly fights, \n Endless laughter under city lights. \n Just two friends -- nothing more, nothing less,
+{ id: 10, image: img9, chapter: "Chapter Ten", title: "First Hang-Out.", act: "act2", mood: "calm",
+shayari: `The First hangout They met— ,\n Just two friends -- nothing more, nothing less,
 But a quiet comfort grows day by day, When they meet face to face.` },
 { id: 11, image: img10, chapter: "Chapter Eleven", title: "A Pencil, A Paper, He Drew Her Face.", act: "act2", mood: "calm",
-shayari: `With a pencil and patience, he drew her face,\nEvery line, every curve, every hidden grace.\nShe looked at it speechless — eyes wet and bright,\n"You made me look beautiful.".` },
+shayari: `With a pencil and patience, he drew her face,\nEvery line, every curve, every hidden grace.\nShe looked at it speechless — eyes wet and bright.".` },
 { id: 2, video: video2_2, chapter: "Chapter Eleven", title: "Thread By Thread.", act: "act1", mood: "happy",
 shayari: `He tried. He failed. But he made her sketch.
 Not perfectly. But honestly.` },
-{ id: 12, image: img11, chapter: "Chapter Twelve", title: "The Headphone Gift ' From Her.", act: "act2", mood: "calm",
+{ id: 12, image: img11, chapter: "Chapter Twelve", title: "The Headphone Gift.", act: "act2", mood: "calm",
 shayari: `She gifted him headphones, quiet and small,\n"For the boy who walked alone through it all."\n He'd listen to songs all day, every day, Lost  \n  in his Music's far away, Now that \n headphones he use's all the day like \n it is a part of his life.` },
 { id: 13, image: img12, chapter: "Chapter Thirteen", title: "Then The Fight Began", act: "act3", mood: "shock",
-shayari: `He felt something fo her — she didn't feel the same.
+shayari: `He felt something fo her — but she didn't feel the same He felt.
+That's was just a freindship nothing more than that...
 One careless word, and everything changed its name.
 A silence louder than anything heard,
 Pride spoke first, and hurt spoke fast,
 And a beautiful friendship became the past..` },
 { id: 14, image: img13, chapter: "Chapter Fourteen", title: "Everything Went Wrong.", act: "act4", mood: "sad",
-shayari: `The chats went cold, the calls went dead,\nOnly her diary knew what she said.\nEverything they built — shattered, torn,\nLeft her questioning why they even talked.` },
+shayari: `The chats went cold, the calls went dead,\nOnly her diary knew what she said.\nEverything they built — shattered, torn,\nLeft her questioning why she even talked.` },
 { id: 15, image: img14, chapter: "Chapter Fifteen", title: "I Know It Hurt's.", act: "act4", mood: "sad",
-shayari: `I know you're hurting — more than words can hold,\nI know your heart feels heavy, dark and cold.\nI'm not here to justify or defend,\nI'm here because I never wanted this end.` },
+shayari: `I know you're hurting — more than words can hold,\nI know your heart feels heavy, dark and cold.\nI'm not here to justify or defend,\nI'm here because I never wanted this way end.` },
 // { id: 16, image: img15, chapter: "Chapter Sixteen", title: "I Am Trying My Best", act: "act4", mood: "sad",
 // shayari: `I'm trying my best — in ways you can't see,\nTo become the person you needed me to be.\nEvery apology I write, every tear I hide,\nCarries the weight of the day you cried.` },
 { id: 17, image: img16, chapter: "Chapter Seventeen", title: "The Emptine'ss.", act: "act4", mood: "sad",
@@ -353,7 +354,7 @@ const chats = [
 {
 img: chat1,
 topLine: "3 weeks ago, you asked…",
-title: "Can we live like this ? ... not love but this... ",
+title: "Not Love But As Friend's Only. Just want the same way... ",
 time: "11:47 pm",
 label: "Chat 1",
 },
@@ -367,7 +368,7 @@ label: "Chat 2",
 {
 img: chat3,
 topLine: "4 weeks ago, you said…",
-title: "Once You told I'm Scared of being Alone...",
+title: "I'm Scared of being Alone Now...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -375,29 +376,29 @@ label: "Chat 2",
 {
 img: chat4,
 topLine: "4 weeks ago, you said…",
-title: "Bhumii Once you said me... close one ka life sa jana why this so normalised ???",
+title: "Why this so normalised Now ?",
 time: "9:29 pm",
 label: "Chat 2",
 },
-{
-img: chat5,
-topLine: "4 weeks ago, you said…",
-title: "How much We were Deep ...",
-time: "9:29 pm",
-label: "Chat 2",
-}
+// {
+// img: chat5,
+// topLine: "4 weeks ago, you said…",
+// title: "How much We were Deep ...",
+// time: "9:29 pm",
+// label: "Chat 2",
+// }
 ,
 {
 img: chat6,
 topLine: "4 weeks ago, you said…",
-title: "I did the same in hesitation with you... not to bother you...",
+title: "I did the same in hesitation... not to bother you Bhumii...",
 time: "9:29 pm",
 label: "Chat 2",
 },
 {
 img: chat7,
 topLine: "4 weeks ago, you said…",
-title: "What boy's does in Love...",
+title: "....",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -413,7 +414,7 @@ label: "Chat 2",
 {
 img: chat10,
 topLine: "4 weeks ago, you said…",
-title: "A Bhumii, Any Problem U Can share Me...",
+title: "A Promise , Any Problem U Can share Me...",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -421,7 +422,7 @@ label: "Chat 2",
 {
 img: chat11,
 topLine: "4 weeks ago, you said…",
-title: "Now I understand...",
+title: "Now I understand.",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -429,7 +430,7 @@ label: "Chat 2",
 {
 img: chat12,
 topLine: "4 weeks ago, you said…",
-title: "But I Prayer...",
+title: "I Prayer.",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -446,7 +447,7 @@ label: "Chat 2",
 {
 img: chat9,
 topLine: "4 weeks ago, you said…",
-title: "Bhumii... Once listen to that heart you had for me. I genuinely promise — I won't bother you, I won't hurt you, not playing with you... May Krishna bless us this time. Please —",
+title: "Bhumii... Once listen to that heart you had for me. I genuinely promise — I won't bother you, I won't hurt you, not playing with you... Not even asking for Love anymore... May Krishna bless us this time. Please —",
 time: "9:29 pm",
 label: "Chat 2",
 }
@@ -459,7 +460,7 @@ return (
 
 <div className="chat-memories-inner">
 <p className="chat-memories-label">Once you said me…</p>
-<h2 className="chat-memories-title">Do you Remember... ??? What Us ???</h2>
+<h2 className="chat-memories-title">Some Memories...</h2>
 
 <div className="chat-list">
 {chats.map((chat, i) => (
