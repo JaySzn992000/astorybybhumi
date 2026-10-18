@@ -636,7 +636,7 @@ const [totalVisits, setTotalVisits] = useState(null);
 
 // ⬇️ COUNT FETCH API (Tere server.js ke port 3001 se connect)
 useEffect(() => {
-fetch("http://localhost:3001/api/visits")
+fetch("https://bhumi-visits.onrender.com/api/visits")
 .then((res) => res.json())
 .then((data) => setTotalVisits(data.count))
 .catch((err) => console.log("Count fetch error:", err));
