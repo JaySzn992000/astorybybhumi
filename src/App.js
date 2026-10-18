@@ -729,6 +729,12 @@ return (
 <h1 className="app-title">A Million's Sorry From Me... But You Can Still Rewrite This...</h1>
 <p className="app-tagline">A story of Bhumii...</p>
 
+{totalVisits !== null && (
+<p style={{ marginTop: "15px", color: "#c98aff", fontFamily: "monospace", letterSpacing: "2px", fontSize: "0.85rem", fontWeight: "bold" }}>
+✦ Opened {totalVisits} times
+</p>
+)}
+
 <div className="header-scroll-hint">
 <span className="scroll-mouse"><span className="scroll-wheel" /></span>
 <span className="scroll-text">scroll to begin</span>
@@ -748,12 +754,6 @@ return (
 <Ending />
 </main>
 
-{/* ⬇️ COUNT SHOW YAHAN HO RAHA HAI */}
-{totalVisits !== null && (
-<p style={{ marginTop: "15px", color: "#c98aff", fontFamily: "monospace", letterSpacing: "2px", fontSize: "0.85rem" }}>
-✦ Opened {totalVisits} times
-</p>
-)}
 </div>
 );
 }
