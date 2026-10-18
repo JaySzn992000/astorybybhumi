@@ -15,28 +15,18 @@ import img11 from "./Images/11.jpeg";
 import img12 from "./Images/12.jpg";
 import img13 from "./Images/13.jpeg";
 import img14 from "./Images/14.jpeg";
-// import img15 from "./Images/15.jpeg";
 import img16 from "./Images/16.jpeg";
-// import img17 from "./Images/17.jpeg";
-// import img18 from "./Images/18.jpeg";
-// import img19 from "./Images/19.jpeg";
-// import img20 from "./Images/20.jpeg";
 import img21 from "./Images/21.jpg";
 import img22 from "./Images/22.jpg";
 import img23 from "./Images/23.jpg";
-// import img24 from "./Images/24.jpg";
-// import img25 from "./Images/25.jpg";
 import img26 from "./Images/26.jpg";
 import img27 from "./Images/27.jpg";
-// import img28 from "./Images/28.jpg";
 import img29 from "./Images/29.jpg";
 import img30 from "./Images/30.jpg";
 import img31 from "./Images/31.jpg";
-// import img32 from "./Images/32.jpg";
 import img33 from "./Images/33.jpg";
 import img34 from "./Images/34.jpg";
 import img35 from "./Images/35.jpg";
-// import img36 from "./Images/36.jpg"
 import chat1 from "./Images/chat1.jpeg";
 import chat2 from "./Images/chat2.jpeg";
 import chat3 from "./Images/chat3.jpeg";
@@ -96,19 +86,8 @@ And a beautiful friendship became the past..` },
 shayari: `The chats went cold, the calls went dead,\nOnly her diary knew what she said.\nEverything they built — shattered, torn,\nLeft her questioning why she even talked.` },
 { id: 15, image: img14, chapter: "Chapter Fifteen", title: "I Know It Hurt's.", act: "act4", mood: "sad",
 shayari: `I know you're hurting — more than words can hold,\nI know your heart feels heavy, dark and cold.\nI'm not here to justify or defend,\nI'm here because I never wanted this way end.` },
-// { id: 16, image: img15, chapter: "Chapter Sixteen", title: "I Am Trying My Best", act: "act4", mood: "sad",
-// shayari: `I'm trying my best — in ways you can't see,\nTo become the person you needed me to be.\nEvery apology I write, every tear I hide,\nCarries the weight of the day you cried.` },
 { id: 17, image: img16, chapter: "Chapter Seventeen", title: "The Emptine'ss.", act: "act4", mood: "sad",
 shayari: `She smiles at the world, but her eyes don't lie,\nThere's a storm behind every "I'm fine, don't ask why."\n I Know You hate me now but i don't want this end,\n please give me a chance so that every things \n happens again well.` },
-// { id: 18, image: img36, chapter: "Chapter Eighteen", title: "She Can't Handle It", act: "act4", mood: "sad",
-// shayari: `It's too heavy now — the silence, the pain,\nEvery memory falls like unforgiving rain.\nShe closes her diary, holds it to her chest,\nAnd whispers to the dark, "I tried my best."` },
-// { id: 19, image: img18, chapter: "Chapter Nineteen", title: "The Emptiness", act: "act4", mood: "sad",
-// shayari: `The headphones hang silent, the sketch gathers dust,\nThe shayaris sit waiting, covered in rust.\nShe waits for a message that never arrives,\nAnd slowly, quietly, she just survives.` },
-// { id: 20, image: img19, chapter: "Chapter Twenty", title: "One Last Wish", act: "act4", mood: "sad",
-// shayari: `If you ever read this, know that I cared,\nKnow that I'm sorry for the silence we shared.\nNot every ending is a goodbye,\nSometimes it's just a tired heart's sigh.` },
-// { id: 21, image: img36, chapter: "Chapter Twenty-One", title: "I Know This Is Where You Belong.", act: "act5", mood: "hope",
-// shayari: `This isn't the end. This is where your story begins. \n The fight, the silence, the pain — They were chapters, 
-// not the whole book. Now it's your turn. Your dreams. \n Your flight. Your city. Your shelter. Your teddies. Your home. \n No one to wait for. No one to explain to. Just you — And everything you ever imagined."` },
 { id: 21, image: img21, chapter: "Chapter Twenty-One", title: "I Know This Is Where You Belong.", act: "act5", mood: "hope",
 shayari: `This isn't the end. This is where your story begins. \n The fight, the silence, the pain — They were chapters, 
 not the whole book. Now it's your turn. Your dreams. \n Your flight. Your city. Your shelter. Your teddies. Your home. \n No one to wait for. No one to explain to. Just you — And everything you ever imagined."` },
@@ -116,16 +95,10 @@ not the whole book. Now it's your turn. Your dreams. \n Your flight. Your city. 
 shayari: `I know that one day you. From Delhi's dust to Bangalore's rain,\n A girl with a suitcase and a heart with full of dreams.\nShe'll left behind the streets that knew her cry,\nTo find the version of herself that wouldn't die.` },
 { id: 23, image: img23, chapter: "Chapter Twenty-Three", title: "The Flight, Your first Love.", act: "act5", mood: "hope",
 shayari: `Above the clouds, she'll watched the world shrink small,\nEvery chapter, every fight — suddenly so small.\nShe pressed her forehead to the window pane,\nAnd whispered, "I'm not who I was — not again."` },
-// { id: 24, image: img24, chapter: "Chapter Twenty-Four", title: "A New Sky", act: "act5", mood: "hope",
-// shayari: `Bangalore greeted her with a different light,\nWarm and soft, and strangely bright.\nShe stepped out of the airport, took a breath,\nAnd felt something inside her come back from death.` },
-// { id: 25, image: img25, chapter: "Chapter Twenty-Five", title: "Her First Job Interview", act: "act5", mood: "hope",
-// shayari: `A crisp white shirt, a nervous smile,\nA resume she'd rewritten a hundred times, mile by mile.\nShe walked into the room like she owned the place,\nAnd the world saw the girl behind the face.` },
 { id: 26, image: img26, chapter: "Chapter Twenty-Six", title: "Your first Job in Banglore.", act: "act5", mood: "hope",
 shayari: `The email came at 11:47 pm,\n"We're happy to inform you" — and she cried in the dark.\nNot from sadness — but from something new,\nA girl who once felt nothing, finally knew.` },
 { id: 27, image: img27, chapter: "Chapter Twenty-Seven", title: "Working Your Dream Job.", act: "act5", mood: "hope",
 shayari: `Mornings with coffee, evenings with code,\nColleagues who became friends, and a life that glowed.\nShe built things with her hands and her mind,\nAnd slowly, she left the old her behind.` },
-// { id: 28, image: img28, chapter: "Chapter Twenty-Eight", title: "She Was Good At It", act: "act5", mood: "hope",
-// shayari: `They praised her work, they said her name,\nAnd for once, it didn't feel like a game.\nShe was good — not because someone told her so,\nBut because she finally believed it, slow and slow.` },
 { id: 29, image: img29, chapter: "Chapter Twenty-Nine", title: "The House You Dreamt Of.", act: "act5", mood: "hope",
 shayari: `One day she'll build a house with big windows and \n warm light, Plants on the sill, books by her side at night.\nShe painted the walls the colour of her soul,\nAnd for the first time she felt she achieved everthing \n once she dreamt of.` },
 { id: 30, image: img30, chapter: "Chapter Thirty", title: "Your Dream: A Shelter for Animals.", act: "act5", mood: "hope",
@@ -133,8 +106,6 @@ shayari: `One day she will build a home for animals, \n Where they will live and
 A place where love begins, Where she cares for them \n  — forever.` },
 { id: 31, image: img31, chapter: "Chapter Thirty-One", title: "She Cared For Them.", act: "act5", mood: "hope",
 shayari: `Every morning you'll feed them with your own hands,\n will Give names to the ones who'd been abandoned by lands.\nyou'll give them water, medicine, and love,\nAnd they'll give you back a peace from above.` },
-// { id: 32, image: img32, chapter: "Chapter Thirty-Two", title: "They Loved Her Back", act: "act5", mood: "hope",
-// shayari: `The dogs would run to her when she came,\nThe cats would curl up and whisper her name.\nShe realised then — love doesn't need words,\nIt just needs someone who truly cares.` },
 { id: 33, image: img33, chapter: "Chapter Thirty-Three", title: "A World: for Animals.", act: "act5", mood: "hope",
 shayari: `Word spread, people came, help arrived,\nAnd the little shelter she built — thrived.\nShe wasn't just a girl anymore, she was a home,\nFor every soul that had ever felt alone.` },
 { id: 34, image: img34, chapter: "Chapter Thirty-Four", title: "Her Teddy Collection — After All Her Dream's.", act: "act5", mood: "hope",
@@ -380,14 +351,6 @@ title: "Why this so normalised Now ?",
 time: "9:29 pm",
 label: "Chat 2",
 },
-// {
-// img: chat5,
-// topLine: "4 weeks ago, you said…",
-// title: "How much We were Deep ...",
-// time: "9:29 pm",
-// label: "Chat 2",
-// }
-,
 {
 img: chat6,
 topLine: "4 weeks ago, you said…",
@@ -434,7 +397,6 @@ title: "I Prayer.",
 time: "9:29 pm",
 label: "Chat 2",
 }
-,
 ,
 {
 img: chat13,
@@ -669,26 +631,31 @@ const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 const [songStarted, setSongStarted] = useState(false);
 const audioRef = useRef(null);
 
+// ⬇️ COUNT STATE
+const [totalVisits, setTotalVisits] = useState(null);
+
+// ⬇️ COUNT FETCH API (Tere server.js ke port 3001 se connect)
+useEffect(() => {
+fetch("http://localhost:3001/api/visits")
+.then((res) => res.json())
+.then((data) => setTotalVisits(data.count))
+.catch((err) => console.log("Count fetch error:", err));
+}, []);
+
 // AUTOPLAY TRICK WITH MUTE & REPEAT
 useEffect(() => {
 const audio = audioRef.current;
 if (!audio) return;
 
-// 1. Audio ko mute karo taaki browser block na kare
 audio.muted = true;
-
-// 2. Play karo
 audio.play()
 .then(() => {
 setSongStarted(true);
-// 3. Play hone ke baad 1 second baad unmute kar do
 setTimeout(() => {
 audio.muted = false;
 }, 1000);
 })
-.catch((err) => {
-console.log("Autoplay blocked by browser. Waiting for user click.");
-// Agar phir bhi block ho, toh pehle click pe unmute hoke play karo
+.catch(() => {
 const onFirstClick = () => {
 audio.muted = false;
 audio.play().catch(() => {});
@@ -696,8 +663,6 @@ window.removeEventListener("click", onFirstClick);
 };
 window.addEventListener("click", onFirstClick);
 });
-
-// Loop hamesha on rahega audio tag mein
 }, []);
 
 useEffect(() => {
@@ -729,41 +694,10 @@ window.addEventListener("mousemove", onMove);
 return () => window.removeEventListener("mousemove", onMove);
 }, []);
 
-
-// Song Auto-Play & Repeat Effect
-useEffect(() => {
-const playAudio = () => {
-if (audioRef.current && !songStarted) {
-audioRef.current.play()
-.then(() => setSongStarted(true))
-.catch(() => {
-// Agar browser block kare, toh first user interaction (click/scroll/touch) pe chalao
-const startOnInteraction = () => {
-audioRef.current.play()
-.then(() => setSongStarted(true))
-.catch(() => {});
-window.removeEventListener("click", startOnInteraction);
-window.removeEventListener("scroll", startOnInteraction);
-window.removeEventListener("touchstart", startOnInteraction);
-};
-window.addEventListener("click", startOnInteraction);
-window.addEventListener("scroll", startOnInteraction);
-window.addEventListener("touchstart", startOnInteraction);
-});
-}
-};
-
-// Thoda delay taaki DOM load ho jaye
-const timer = setTimeout(playAudio, 500);
-
-return () => clearTimeout(timer);
-}, [songStarted]);
-
 const handleMood = useCallback((m) => setMood(m), []);
 const moodClass = useMemo(() => `mood-${mood}`, [mood]);
 
 return (
-
 <div className={`app ${moodClass}`}>
 <audio ref={audioRef} src={song} loop playsInline preload="auto" />
 <div className="film-grain" />
@@ -794,6 +728,7 @@ return (
 <div className="header-badge">A CINEMATIC STORY</div>
 <h1 className="app-title">A Million's Sorry From Me... But You Can Still Rewrite This...</h1>
 <p className="app-tagline">A story of Bhumii...</p>
+
 <div className="header-scroll-hint">
 <span className="scroll-mouse"><span className="scroll-wheel" /></span>
 <span className="scroll-text">scroll to begin</span>
@@ -812,6 +747,13 @@ return (
 <PromiseScene onMood={handleMood} />
 <Ending />
 </main>
+
+{/* ⬇️ COUNT SHOW YAHAN HO RAHA HAI */}
+{totalVisits !== null && (
+<p style={{ marginTop: "15px", color: "#c98aff", fontFamily: "monospace", letterSpacing: "2px", fontSize: "0.85rem" }}>
+✦ Opened {totalVisits} times
+</p>
+)}
 </div>
 );
 }
