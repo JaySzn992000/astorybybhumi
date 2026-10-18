@@ -731,7 +731,7 @@ return (
 
 {totalVisits !== null && (
 <p style={{ marginTop: "15px", color: "#c98aff", fontFamily: "monospace", letterSpacing: "2px", fontSize: "0.85rem", fontWeight: "bold" }}>
-✦ Opened {totalVisits} times
+✦ Opened {totalVisits}
 </p>
 )}
 
